@@ -1,0 +1,106 @@
+body {
+    height: 98vh;
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.toggle {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 0.5em;
+    font-weight: 800;
+}
+
+.toggle:hover {
+    background-color: white;
+    color: black;
+}
+
+#clock {
+    margin: 0 auto;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#month, .comma {
+    margin-right: 2rem;
+}
+
+#date {
+    display: flex;
+    font-size: 3rem;
+}
+
+#time {
+    display: flex;
+    font-size: 15rem;
+}
+
+@media screen and (max-width: 1500px) {
+    #date {
+        font-size: 2rem;
+    }
+
+    #time {
+        font-size: 12rem;
+    }
+
+    #month, .comma {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #date {
+        font-size: 2rem;
+    }
+
+    #time {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #date {
+        font-size: 1.5rem;
+    }
+
+    #time {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #date {
+        font-size: 1rem;
+    }
+
+    #time {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #date {
+        font-size: .75rem;
+    }
+
+    #time {
+        font-size: 2rem;
+    }
+}
